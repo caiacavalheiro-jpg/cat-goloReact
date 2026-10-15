@@ -1,20 +1,93 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.title{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 20px;
+    background-color: #f4f7fc;
+    color: #263449;
 }
 
-.titleback{
-    background-color: cornflowerblue;
+
+.titleback {
+    background: cornflowerblue;
+    height: 100px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #f0f5ff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+#root > div:not(.titleback) {
+    margin: 0 auto;
+}
+
+#root h3 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #53647c;
+    background-color: #edf3ff;
+    padding: 9px 12px;
+    margin: 8px 0;
+}
+
+#root h3:first-of-type {
+    margin-top: 15px;
+}
+
+#root > div {
+    text-align: center;
+    padding: 10px;
+}
+
+#root p {
+    line-height: 1.6;
+}
+
+
+@media (max-width: 600px) {
+    .titleback {
+        padding: 25px 20px;
+        min-height: 140px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+}
+
+.rodape {
+    background-color: black;
     height: 80px;
 }
 
-.descricao{
+.assinatura {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 7px;
+}
 
+.texto {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }

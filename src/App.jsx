@@ -62,6 +62,8 @@ function App() {
           return <CardCurso nome={e.nome} duracao={e.duracao} modalidade={e.modalidade} nivel={e.nivel} vagas={e.vagas} />
         })
       }
+      <br /><br />
+      <Rodape/>
     </>
   )
 }
